@@ -1,0 +1,260 @@
+Opgave 1:
+Which of these sentences are propositions? What are the
+truth values of those that are propositions?
+a) Boston is the capital of Massachusetts.
+ - Proposition, men altså true.
+
+b) Miami is the capital of Florida.
+ - Proposition, men er falsk.
+
+c) 2 + 3 =5.
+ - Proposition, men er true
+
+d) 5 + 7 =10.
+ - Proposition, men er falsk
+
+e) x + 2 =11.
+ - Ikke en Proposition
+
+f )  Answer this question
+ - Ikke en Proposition
+
+
+ Opgave 3:
+ What is the negation of each of these propositions?
+a) Linda is younger than Sanjay.
+ - Linda is not younger than Sanjay
+
+b) Mei makes more money than Isabella.
+ - Mei does not make more money than Isabella
+
+c) Moshe is taller than Monica.
+ - Moshe is not taller than Monica
+
+d) Abby is richer than Ricardo.
+ - Abby is not richer than Ricardo
+
+
+ Opgave 11:
+ Let p and q be the propositions “Swimming at the New
+Jersey shore is allowed” and “Sharks have been spotted
+near the shore,” respectively. Express each of these com-
+pound propositions as an English sentence.
+a) ¬q b) p ∧q c) ¬p Vq
+ - a: Sharks have not been spotted near the shore
+ - b: Swimming at the New Jersey shore is allowed and sharks
+      have been spotted near the shore.
+ - c: Either swimming at the New Jersey shore is not allowed
+      or sharks have been spotted near the shore.
+
+d) p →¬q e) ¬q →p f )  ¬p →¬q
+ - d: If swimming at the New Jersey shore is allowed, then 
+      sharks have not been spotted near the shore.
+ - e: If sharks have not been spotted near the shore, then 
+      swimming at the New Jersey shore is allowed.
+ - f: If swimming at the New Jersey shore is not allowed, 
+      then sharks have not been spotted near the shore
+
+g) p ↔¬q h) ¬p ∧(p !¬q)
+ - g: Swimming at the New Jersey shore is allowed if and only if 
+      sharks have not been spotted near the shore.
+ - h: Swimming at the New Jersey shore is not allowed, and either 
+      swimming is allowed or sharks have not been spotted near the 
+      shore.
+
+
+Opgave 33:
+Construct a truth table for each of these compound propo-
+sitions.
+a) p ∧¬p =
+| p | Værdi |
+| F |   F   |
+| T |   F   |
+
+Altid falsk
+
+b) p !¬p =
+| p | Værdi |
+| F |   T   |
+| T |   T   |
+Altid sand
+
+c) (p !¬q) →q =
+| p | q | (p \lor \lnot q) | Udtryk |
+| F | F |        T         |   F    |
+| F | T |        T         |   T    |
+| T | F |        T         |   F    |
+| T | T |        T         |   T    |
+Svarer til q (sand når q sand, eller falsk)
+
+d) (p !q) →(p ∧q) =
+| p | q | (p \lor q) | (p \land q) | Udtryk |
+| F | F |      F     |      F      |   T    |
+| F | T |      T     |      F      |   F    |
+| T | F |      T     |      F      |   F    |
+| T | T |      T     |      T      |   T    |
+Svarer til p ↔ q (sand kun når begge er ens)
+
+e) (p →q) ↔(¬q →¬p) =
+| p | q | (p \to q) | (\lnot q \to \lnot p) | Udtryk |
+| F | F |    T      |           T          |   T    |
+| F | T |    T      |           T          |   T    |
+| T | F |    F      |           F          |   T    |
+| T | T |    T      |           T          |   T    |
+
+f )  (p →q) →(q →p) =
+| p | q | (p \to q) | (q \to p) | Udtryk |
+| F | F |    T      |    T      |   T    |
+| F | T |    T      |    F      |   F    |
+| T | F |    F      |    T      |   T    |
+| T | T |    T      |    T      |   T    |
+
+
+
+
+Opgave 37:
+Construct a truth table for each of these compound propo-
+sitions.
+a) p →¬q 
+| p | q | ¬q | Udtryk |
+| - | - | -- | ------ |
+| F | F | T  | **T**  |
+| F | T | F  | **T**  |
+| T | F | T  | **T**  |
+| T | T | F  | **F**  |
+
+b) ¬p ↔q
+| p                                | q | ¬p | Udtryk |
+| -------------------------------- | - | -- | ------ |
+| F                                | F | T  | **F**  |
+| F                                | T | T  | **T**  |
+| T                                | F | F  | **T**  |
+| T                                | T | F  | **F**  |
+| ⇒ Svarer til (p \oplus q) (XOR). |   |    |        |
+
+c) (p →q) !(¬p →q) 
+| p                             | q | (p\to q) | (¬p\to q) | Udtryk |
+| ----------------------------- | - | -------- | --------- | ------ |
+| F                             | F | T        | F         | **T**  |
+| F                             | T | T        | T         | **T**  |
+| T                             | F | F        | T         | **T**  |
+| T                             | T | T        | T         | **T**  |
+| ⇒ **Tautologi** (altid sand). |   |          |           |        |
+
+d) (p →q) ∧(¬p →q)
+| p                     | q | (p\to q) | (¬p\to q) | Udtryk |
+| --------------------- | - | -------- | --------- | ------ |
+| F                     | F | T        | F         | **F**  |
+| F                     | T | T        | T         | **T**  |
+| T                     | F | F        | T         | **F**  |
+| T                     | T | T        | T         | **T**  |
+| ⇒ Svarer til **(q)**. |   |          |           |        |
+
+e) (p ↔q) !(¬p ↔q)
+| p                | q | (p↔q) | (¬p↔q) | Udtryk |
+| ---------------- | - | ----- | ------ | ------ |
+| F                | F | T     | F      | **T**  |
+| F                | T | F     | T      | **T**  |
+| T                | F | F     | T      | **T**  |
+| T                | T | T     | F      | **T**  |
+| ⇒ **Tautologi**. |   |       |        |        |
+
+f)  (¬p ↔¬q) ↔(p ↔q)
+| p                                         | q | (¬p↔¬q) | (p↔q) | Udtryk |
+| ----------------------------------------- | - | ------- | ----- | ------ |
+| F                                         | F | T       | T     | **T**  |
+| F                                         | T | F       | F     | **T**  |
+| T                                         | F | F       | F     | **T**  |
+| T                                         | T | T       | T     | **T**  |
+| ⇒ **Tautologi** (de to led er altid ens). |   |         |       |        |
+
+
+
+
+Opgave 38:
+Construct a truth table for each of these compound propo-
+sitions.
+a) (p !q) !r 
+| p | q | r | Udtryk |
+| - | - | - | ------ |
+| F | F | F | F      |
+| F | F | T | T      |
+| F | T | F | T      |
+| F | T | T | T      |
+| T | F | F | T      |
+| T | F | T | T      |
+| T | T | F | T      |
+| T | T | T | T      |
+
+b) (p !q) ∧r
+| p | q | r | (p \lor q) | Udtryk |
+| - | - | - | ---------- | ------ |
+| F | F | F | F          | F      |
+| F | F | T | F          | F      |
+| F | T | F | T          | F      |
+| F | T | T | T          | T      |
+| T | F | F | T          | F      |
+| T | F | T | T          | T      |
+| T | T | F | T          | F      |
+| T | T | T | T          | T      |
+
+c) (p ∧q) !r 
+| p | q | r | (p \land q) | Udtryk |
+| - | - | - | ----------- | ------ |
+| F | F | F | F           | F      |
+| F | F | T | F           | T      |
+| F | T | F | F           | F      |
+| F | T | T | F           | T      |
+| T | F | F | F           | F      |
+| T | F | T | F           | T      |
+| T | T | F | T           | T      |
+| T | T | T | T           | T      |
+
+d) (p ∧q) ∧r
+| p | q | r | (p \land q) | Udtryk |
+| - | - | - | ----------- | ------ |
+| F | F | F | F           | F      |
+| F | F | T | F           | F      |
+| F | T | F | F           | F      |
+| F | T | T | F           | F      |
+| T | F | F | F           | F      |
+| T | F | T | F           | F      |
+| T | T | F | T           | F      |
+| T | T | T | T           | T      |
+
+e) (p !q) ∧¬r 
+| p | q | r | (p \lor q) | ¬r | Udtryk |
+| - | - | - | ---------- | -- | ------ |
+| F | F | F | F          | T  | F      |
+| F | F | T | F          | F  | F      |
+| F | T | F | T          | T  | T      |
+| F | T | T | T          | F  | F      |
+| T | F | F | T          | T  | T      |
+| T | F | T | T          | F  | F      |
+| T | T | F | T          | T  | T      |
+| T | T | T | T          | F  | F      |
+
+f)  (p ∧q) !¬r
+| p | q | r | (p \land q) | ¬r | Udtryk |
+| - | - | - | ----------- | -- | ------ |
+| F | F | F | F           | T  | T      |
+| F | F | T | F           | F  | F      |
+| F | T | F | F           | T  | T      |
+| F | T | T | F           | F  | F      |
+| T | F | F | F           | T  | T      |
+| T | F | T | F           | F  | F      |
+| T | T | F | T           | T  | T      |
+| T | T | T | T           | F  | T      |
+
+
+
+
+Opgave 53:
+The nth statement in a list of 100 statements is “Exactly
+n of the statements in this list are false.”
+a) What conclusions can you draw from these state-
+ments?
+b) Answer part (a) if the nth statement is “At least n of
+the statements in this list are false.”
+c) Answer part (b) assuming that the list contains 99
+statements.
