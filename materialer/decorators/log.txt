@@ -1,0 +1,19 @@
+[2025-10-20 15:09:56.943029] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:09:56.943729] Function add called with args=(10, 5), kwargs={}, result=15
+[2025-10-20 15:10:05.030623] Function printer called with args=('Hej verden!',), kwargs={}, result=Hej verden!
+[2025-10-20 15:10:33.254759] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:10:33.255384] Function add called with args=(10, 5), kwargs={}, result=15
+[2025-10-20 15:10:35.237634] Function printer called with args=('Hej verden!',), kwargs={}, result=Hej verden!
+[2025-10-20 15:18:00.007009] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:18:00.008745] Function printer called with args=('Hej!',), kwargs={}, result=Hej!
+[2025-10-20 15:18:10.444804] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:18:10.445294] Function add called with args=(10, 5), kwargs={}, result=15
+[2025-10-20 15:18:12.410485] Function printer called with args=('Hej verden!',), kwargs={}, result=Hej verden!
+[2025-10-20 15:18:22.258043] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:18:22.258709] Function printer called with args=('Hej!',), kwargs={}, result=Hej!
+[2025-10-20 15:18:57.253763] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:18:57.255686] Function printer called with args=('Hej!',), kwargs={}, result=Hej!
+[2025-10-20 15:19:00.269179] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:19:00.270412] Function printer called with args=('Hej!',), kwargs={}, result=Hej!
+[2025-10-20 15:19:56.740657] Function add called with args=(1, 2, 3), kwargs={}, result=6
+[2025-10-20 15:19:56.741531] Function printer called with args=('Hej!',), kwargs={}, result=Hej!
