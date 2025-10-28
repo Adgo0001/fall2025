@@ -1,0 +1,81 @@
+# ØV2 – Angry Bird (meget simpel version)
+
+class Bird:
+    def __init__(self, x, y, direction="up"):
+        self.x = x
+        self.y = y
+        self.direction = direction
+
+    def move_forward(self):
+        if self.direction == "up":
+            self.y -= 1
+        elif self.direction == "down":
+            self.y += 1
+        elif self.direction == "left":
+            self.x -= 1
+        elif self.direction == "right":
+            self.x += 1
+
+    def turn_left(self):
+        dirs = ["up", "left", "down", "right"]
+        self.direction = dirs[(dirs.index(self.direction) + 1) % 4]
+
+    def turn_right(self):
+        dirs = ["up", "right", "down", "left"]
+        self.direction = dirs[(dirs.index(self.direction) + 1) % 4]
+
+
+class Pig:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+class Board:
+    def __init__(self, size=5):
+        self.size = size
+        self.bird = Bird(0, size - 1)
+        self.pig = Pig(size - 1, 0)
+
+    def display(self):
+        for y in range(self.size):
+            for x in range(self.size):
+                if self.bird.x == x and self.bird.y == y:
+                    print("B", end=" ")
+                elif self.pig.x == x and self.pig.y == y:
+                    print("P", end=" ")
+                else:
+                    print(".", end=" ")
+            print()
+        print()
+
+    def run(self):
+        while True:
+            self.display()
+            if self.bird.x == self.pig.x and self.bird.y == self.pig.y:
+                print("Du vinder!")
+                break
+
+            cmd = input("Kommando (f=forward, l=left, r=right, q=quit): ")
+            if cmd == "f":
+                self.bird.move_forward()
+            elif cmd == "l":
+                self.bird.turn_left()
+            elif cmd == "r":
+                self.bird.turn_right()
+            elif cmd == "q":
+                print("Farvel!")
+                break
+
+
+class Game:
+    def __init__(self):
+        self.board = Board()
+
+    def play(self):
+        print("Velkommen til Angry Bird (terminalversion)!")
+        self.board.run()
+
+
+if __name__ == "__main__":
+    Game().play()
