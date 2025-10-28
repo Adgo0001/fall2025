@@ -1,4 +1,4 @@
-
+    
 # Obligatorisk opgave 1
 
 Du kan finde opgaven på Fronter.
